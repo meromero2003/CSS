@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column; /* Display boxes in a column */
+            align-items: center; /* Center items horizontally */
+        }
+        .box {
+            height: 5rem;
+            width: calc(100% - 2rem); /* Make boxes take full width with some margin */
+            border: 1px solid;
+            margin: 0.5rem; /* Add margin for spacing between boxes */
+            transition: all 0.3s ease; /* Adding transition for smooth animation */
+        }
+        .box-1 {
+            background: #db5a3a;
+        }
+        .box-2 {
+            background: #8bd48b;
+        }
+        .box-3 {
+            background: #9e63e2;
+        }
+
+
+        /* Media query for mobile devices */
+        @media only screen and (max-width: 600px) {
+            .box {
+                width: calc(100% - 1rem); /* Make boxes take full width with reduced margin */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+    </div>
+</body>
+</html>
